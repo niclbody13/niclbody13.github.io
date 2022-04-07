@@ -1,0 +1,35 @@
+body {
+    background-color: orangered;
+}
+
+li {
+    font-size:large;
+}
+
+p {
+    font-size: larger; 
+}
+
+h1 {
+    text-align: center
+}
+
+h2 {
+    text-align: center
+}
+
+h3 {
+    text-align: center;
+}
+
+a:hover {
+    background-color: green;
+}
+
+a {
+   font-size: xx-large;
+}
+
+a:active {
+    font-size: xxx-large;
+ }
