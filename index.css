@@ -1,5 +1,6 @@
 body {
-    background-color: orangered;
+    /*background-color: orangered;*/
+    background-image: linear-gradient(orangered, orange);
 }
 
 li {
