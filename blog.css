@@ -60,3 +60,7 @@ button:active {
 html {
     min-height: 100%;
 }
+
+hr {
+    border: 1px solid black;
+}
