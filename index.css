@@ -20,6 +20,8 @@ h3 {
 img {
     width: 32rem;
     height: 38rem;
+    border: 5px solid;
+    box-shadow: 2px 4px 5px;
 }
 
 #blogLink {
