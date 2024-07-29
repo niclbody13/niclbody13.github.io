@@ -1,0 +1,36 @@
+.navbar {
+    display: flex;
+    justify-content: right;
+    /* float: right; */
+    /* padding: 1rem; */
+    font-size: calc(5px + 2vmin);
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar li {
+    display: inline-flex;
+    /* align-items: center; */
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: 0.25s ease-out;
+}
+
+.navbar li a:hover {
+    transform: scale(1.1);
+}
+
+.active {
+    scale: 1.25;
+    text-decoration: underline !important;
+}
