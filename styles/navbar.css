@@ -22,8 +22,9 @@
 .navbar li a {
     color: white;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    margin: 0.5rem 1rem;
     transition: 0.25s ease-out;
+    cursor: pointer;
 }
 
 .navbar li a:hover {

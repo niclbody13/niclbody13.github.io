@@ -1,14 +1,3 @@
-body {
-    /* background-image: linear-gradient(#2d2d30, #252526); */
-    background: linear-gradient(45deg, #2f2f2f, #434343, #555555);
-    background-size: 200% 200%;
-    /* animation: gradientAnimation 10s ease infinite; */
-    /* background-color: #252526; */
-    color: white;
-    font-family: 'Lato', 'sans-serif';
-    margin: 2rem;
-}
-
 .content {
     opacity: 0;
     animation: fadeIn 2s ease-out forwards;
@@ -36,16 +25,6 @@ body {
     }
 }
 
-
-li,
-p {
-    font-size: x-large;
-}
-
-p {
-    /* text-align: center; */
-}
-
 h1,
 h2,
 h3 {
@@ -64,13 +43,4 @@ img {
 #imgWrapper {
     display: flex;
     justify-content: center;
-}
-
-#spotifyWrapper {
-    width: 32rem;
-    height: 38rem;
-    float: left;
-    margin-left: 1rem;
-    box-shadow: 0 4px 8px 0 black;
-    border-radius: .75rem;
 }
