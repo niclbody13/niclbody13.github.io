@@ -16,3 +16,11 @@ wumpus.addEventListener('click', () => {
     const url = 'https://github.com/niclbody13/Hunt-The-Wumpus'
     window.location.href = url
 })
+
+
+let minecraft = document.getElementById('minecraft')
+
+minecraft.addEventListener('click', () => {
+    const url = 'https://github.com/niclbody13/MinecraftServerAutomation'
+    window.location.href = url
+})

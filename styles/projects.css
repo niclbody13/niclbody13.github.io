@@ -32,18 +32,29 @@
     border-radius: 10px;
     background-color: #555;
     box-shadow: 0 4px 8px 0 #333;
-    background-image: url('../assets/wumpus.png');
     background-size: cover;
     position: relative;
     cursor: pointer;
 }
 
+#wumpus {
+    background-image: url('../assets/wumpus.png');
+}
+
+#minecraft {
+    background-image: url('../assets/minecraft.png');
+    background-position: center;
+    background-size: contain;
+}
+
 .textContainer {
     position: absolute;
     display: none;
+    height: 60%;
     animation: disappear 0.3s ease-out;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
 }
 
 @keyframes appear {
