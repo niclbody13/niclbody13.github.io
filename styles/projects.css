@@ -14,7 +14,7 @@
 }
 
 .project h3,
-.project p{
+.project p {
     padding: 0 0.5rem;
 }
 
@@ -76,5 +76,33 @@
     to {
         display: none;
         opacity: 0;
+    }
+}
+
+@media(max-width: 450px) {
+    .projects {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project {
+        width: 18rem;
+        height: 20rem;
+    }
+
+    .textContainer {
+        display: block;
+        height: 50%;
+        overflow: scroll;
+    }
+
+    .project h3 {
+        font-size: 1.25rem;
+        margin: 0.25rem 0;
+    }
+
+    .project p {
+        font-size: 0.9rem;
+        margin: 0;
     }
 }

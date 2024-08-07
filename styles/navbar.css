@@ -35,3 +35,17 @@
     scale: 1.25;
     text-decoration: underline !important;
 }
+
+@media(max-width: 450px) { 
+    .navbar {
+        font-size: calc(5px + 3vmin);
+    }
+
+    .navbar ul {
+        gap: 0;
+    }
+
+    .navbar li a {
+        margin: 0.5rem 0.5rem;
+    }
+}

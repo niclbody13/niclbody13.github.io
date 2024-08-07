@@ -35,12 +35,24 @@ img {
     width: 16rem;
     height: 19rem;
     border-radius: 50%;
-    border: 5px solid black !important;
-    box-shadow: 2px 4px 5px black !important;
-    
+    box-shadow: 0 4px 8px 0 black;    
 }
 
 #imgWrapper {
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 450px) {
+    main {
+        margin-top: 4rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.15rem;
+    }
 }
