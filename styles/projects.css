@@ -31,7 +31,7 @@
     height: 26rem;
     border-radius: 10px;
     background-color: #555;
-    box-shadow: 0 4px 8px 0 #333;
+    box-shadow: 0 4px 8px 0 #000;
     background-size: cover;
     position: relative;
     cursor: pointer;
@@ -47,6 +47,11 @@
     background-size: contain;
 }
 
+#edir {
+    background-image: url('../assets/edir.jpg');
+    background-position: center;
+}
+
 .textContainer {
     position: absolute;
     display: none;
@@ -55,6 +60,7 @@
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 10px;
+    user-select: text;
 }
 
 @keyframes appear {

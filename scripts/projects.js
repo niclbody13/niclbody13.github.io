@@ -17,10 +17,16 @@ wumpus.addEventListener('click', () => {
     window.location.href = url
 })
 
-
 let minecraft = document.getElementById('minecraft')
 
 minecraft.addEventListener('click', () => {
     const url = 'https://github.com/niclbody13/MinecraftServerAutomation'
+    window.location.href = url
+})
+
+let edir = document.getElementById('edir')
+
+edir.addEventListener('click', () => {
+    const url = 'https://impactstudio.oregonstate.edu/edir'
     window.location.href = url
 })
