@@ -30,3 +30,10 @@ edir.addEventListener('click', () => {
     const url = 'https://impactstudio.oregonstate.edu/edir'
     window.location.href = url
 })
+
+let tv = document.getElementById('tv')
+
+tv.addEventListener('click', () => {
+    const url = 'https://github.com/niclbody13/TV-Review'
+    window.location.href = url
+})

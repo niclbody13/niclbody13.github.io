@@ -52,6 +52,11 @@
     background-position: center;
 }
 
+#tv {
+    background-image: url('../assets/tv.jpg');
+    background-position: center;
+}
+
 .textContainer {
     position: absolute;
     display: none;
@@ -110,5 +115,17 @@
     .project p {
         font-size: 0.9rem;
         margin: 0;
+    }
+}
+
+@media(max-width: 1220px) {
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 830px) {
+    .projects {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
