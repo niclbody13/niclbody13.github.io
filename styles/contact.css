@@ -13,4 +13,14 @@ main {
 
 p {
     margin: 2rem;
+    font-size: 1.15rem;
+}
+
+i {
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
 }
