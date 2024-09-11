@@ -11,7 +11,7 @@ main {
     border-radius: 10px;
 }
 
-p {
+div {
     margin: 2rem;
     font-size: 1.15rem;
 }
@@ -23,4 +23,15 @@ i {
 
 h3 {
     font-size: 1.5rem;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.contactInfo { 
+    margin: 0;
+    display: inline;
 }
