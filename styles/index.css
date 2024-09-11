@@ -31,15 +31,64 @@ h3 {
     text-align: center
 }
 
+.textBox > p {
+    color: #ccc;
+    margin: 1rem auto;
+    max-width: 36rem;
+    font-size: 1.15rem;
+}
+
+main {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+}
+
 img {
     height: 18rem;
     border-radius: 50%;
     box-shadow: 0 4px 8px 0 black;    
 }
 
+i {
+    font-size: 1.75rem;
+    margin: 0.25rem;
+}
+
+.techStack {
+    display: flex;
+    align-items: center;
+}
+
+.techStack > span {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+}
+
+.techStack > p {
+    font-size: 1.15rem;
+}
+
+.textBox {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 #imgWrapper {
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 775px) {
+    main {
+        flex-direction: column;
+    }
+
+    .textBox {
+        align-items: center;
+    }
 }
 
 @media (max-width: 450px) {
