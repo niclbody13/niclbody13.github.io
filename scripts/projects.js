@@ -19,29 +19,55 @@ let distY = 0
 let isFilled = false
 
 textContainers.forEach((textContainer) => {
-
+    // let lastY = 0
     textContainer.addEventListener('touchstart', (e) => {
-        if(isFilled) {
-            startY = e.touches[0].clientY + 100 // Record the initial Y position 
-        } else {
-            startY = e.touches[0].clientY // Record the initial Y position 
-        }
+        startY = e.touches[0].clientY // Record the initial Y position 
         console.log('startY: ', startY)
     })
 
     textContainer.addEventListener('touchmove', (e) => {
-        distY = e.touches[0].clientY - startY // Calculate the distance swiped
+        distY = (e.touches[0].clientY - startY) // Calculate the distance swiped
+        console.log("distance swiped: ", distY)
+        // textContainer.style.height = '100%'
+
+        const scrollTop = textContainer.scrollTop
+        const scrollHeight = textContainer.scrollHeight
+        const offsetHeight = textContainer.offsetHeight
+    
+        const atTop = scrollTop === 0 // Check if at the top of the container
+        const atBottom = scrollTop + offsetHeight >= scrollHeight // Check if at the bottom of the container
+    
+        if (atTop && e.touches[0].clientY > startY) {
+            // User is at the top and trying to scroll up, prevent page scrolling
+            console.log("Preventing default scroll at top")
+            e.preventDefault()
+        } else if (atBottom && e.touches[0].clientY < startY) {
+            // User is at the bottom and trying to scroll down, prevent page scrolling
+            console.log("Preventing default scroll at bottom")
+            e.preventDefault()
+        }
 
         // Limit the upward swipe to prevent going past the top
-        const maxSwipeUp = -projectsHeight + 175 // Maximum upward distance
-        const maxSwipeDown = -startY // Maximum downward distance
-        // distY = Math.max(distY, maxSwipeUp)
-        distY = Math.max(distY, maxSwipeUp) // Prevent swiping too far up
-        // distY = Math.min(distY, maxSwipeDown) // Prevent swiping too far down
+        const maxSwipeUp = -projectsHeight + 176 // Maximum upward distance
+        console.log("max swipe: ", maxSwipeUp)
+        const maxSwipeDown = startY // Maximum downward distance
+        if(distY < 0) {
+            // distY = Math.min(distY, -106)
+            distY = -0.01  // minimal distance because height will go from 40% - 100%
+        } else {
+            if(distY > 75) {
+                distY = Math.min(distY, 106)
+                // distY = 106
+            } else {
+                distY = 0
+            }
+        }
 
+        console.log("distY: ", distY)
         textContainer.style.backgroundColor = 'rgba(0, 0, 0, 1)'
         // Apply the vertical translation
         textContainer.style.transform = `translateY(${distY}px)`
+        textContainer.style.transform = 'translateY(0)'
     })
 
     textContainer.addEventListener('touchend', () => {
@@ -51,12 +77,11 @@ textContainers.forEach((textContainer) => {
             // textContainer.style.border = 'none'
             textContainer.style.height = '100%'
             isFilled = true
-        } else {
-            isFilled = false
+        } else if(distY > 0) {
             textContainer.style.overflow = 'hidden'
             textContainer.style.backgroundColor = 'rgba(0, 0, 0, 0.75)'
-            textContainer.style.transform = 'translateY(0)'
             textContainer.style. height = '40%'
+            isFilled = false
         }
         distY = 0
     })

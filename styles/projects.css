@@ -92,14 +92,19 @@
 }
 
 @media(max-width: 450px) {
+    body {
+        overflow: hidden;
+    }
+
     .projects {
         /* display: flex; */
         grid-template-columns: repeat(2, 1fr) !important;
         /* flex-direction: column; */
+        gap: 0.5rem;
     }
 
     .project {
-        width: 10rem;
+        width: 11rem;
         height: 11rem;
         position: relative;
     }
