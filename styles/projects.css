@@ -58,6 +58,10 @@ footer {
     background-position: center;
 }
 
+#starWarsWiki {
+    background-image: url('../assets/starWarsWiki.png');
+}
+
 #tv {
     background-image: url('../assets/tvReview.png');
     background-position: center;

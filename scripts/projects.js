@@ -116,3 +116,10 @@ tv.addEventListener('click', () => {
     const url = 'https://github.com/niclbody13/TV-Review'
     window.location.href = url
 })
+
+let starWars = document.getElementById('starWarsWiki')
+
+starWars.addEventListener('click', () => {
+    const url = 'https://github.com/niclbody13/StarWarsWiki'
+    window.location.href = url
+})
