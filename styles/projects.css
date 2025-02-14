@@ -26,10 +26,12 @@ footer {
 
 .project h3 {
     font-size: 1.25rem;
+    margin-bottom: 0;
 }
 
 .project p {
     font-size: 1.1rem;
+    margin-top: 0.5rem;
 }
 
 .project {
@@ -60,6 +62,11 @@ footer {
 
 #starWarsWiki {
     background-image: url('../assets/starWarsWiki.png');
+}
+
+#reduxShoppingApp {
+    background-image: url('../assets/reduxShoppingApp.png');
+    background-position: center;
 }
 
 #tv {

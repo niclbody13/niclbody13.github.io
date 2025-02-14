@@ -123,3 +123,10 @@ starWars.addEventListener('click', () => {
     const url = 'https://github.com/niclbody13/StarWarsWiki'
     window.location.href = url
 })
+
+let reduxShopping = document.getElementById('reduxShoppingApp')
+
+reduxShopping.addEventListener('click', () => {
+    const url = 'https://github.com/niclbody13/ReduxShoppingApp'
+    window.location.href = url
+})
