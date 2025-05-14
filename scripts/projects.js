@@ -120,13 +120,13 @@ tv.addEventListener('click', () => {
 let starWars = document.getElementById('starWarsWiki')
 
 starWars.addEventListener('click', () => {
-    const url = 'https://github.com/niclbody13/StarWarsWiki'
-    window.location.href = url
+    const url = 'https://niclbody13.github.io/StarWarsWiki'
+    window.open(url, '_blank', 'noopener,noreferrer')
 })
 
 let reduxShopping = document.getElementById('reduxShoppingApp')
 
 reduxShopping.addEventListener('click', () => {
-    const url = 'https://github.com/niclbody13/ReduxShoppingApp'
-    window.location.href = url
+    const url = 'https://niclbody13.github.io/ReduxShoppingApp'
+    window.open(url, '_blank', 'noopener,noreferrer')
 })
